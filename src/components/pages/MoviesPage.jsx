@@ -1,10 +1,11 @@
+import SearchBar from "components/SearchBar/SearchBar";
 
 
 const Movies = () => {
   return (
     <div>
       
-         <div>Movies Page</div>
+      <SearchBar/>
         
     </div>
   );

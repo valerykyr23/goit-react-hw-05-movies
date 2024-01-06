@@ -1,5 +1,7 @@
+import response from "../fetch";
+
 const Home = () => {
-return <div> This is home page </div>
+return <div>Home</div>
 };
 
 export default Home;
