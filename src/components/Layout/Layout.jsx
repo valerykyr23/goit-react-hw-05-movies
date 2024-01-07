@@ -1,28 +1,42 @@
-import { NavLink, Outlet } from "react-router-dom";
-import css from "./Layout.module.css"
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import { Loader } from '../Loader/Loader';
+import {
+  Container,
+  Header,
+  Logo,
+  Links,
+  Footer,
+  Text,
+  IconLogo,
+} from './Layout.styled';
 
 const Layout = () => {
-    return <div>
-        <header>
-            <ul className={css.navigation}>
-          <li><NavLink className={css.NavLink} to="/">Home</NavLink></li>
-          <li><NavLink className={css.NavLink} to="/movies">Movies</NavLink></li>
-            </ul>
-
-        </header>
-        <main>
-             <Outlet/>
-        </main>
-        
-        <footer>
-            <ul className={css.FooterList}>
-                <li className={css.FooterLi}>Contacts</li>
-                <li className={css.FooterLi}>Credits</li>
-                <li className={css.FooterLi}>About</li>
-            </ul>
-        </footer>
-    </div>
+  return (
+    <>
+      <Container>
+        <Header>
+          <Logo>
+            <IconLogo />
+            TMDB
+          </Logo>
+          <nav>
+            <Links to="/" end>
+              Home
+            </Links>
+            <Links to="/movies">Movie</Links>
+          </nav>
+        </Header>
+        <Suspense fallback={<Loader />}>
+          <Outlet />
+        </Suspense>
+        <Footer>
+          <Text>&copy; {new Date().getFullYear()} Movie Search</Text>
+        </Footer>
+      </Container>
+    </>
+  );
 };
-
 
 export default Layout;
