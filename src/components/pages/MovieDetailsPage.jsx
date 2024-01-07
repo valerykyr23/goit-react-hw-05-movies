@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, Suspense } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 
-import { fetchMovieDetails } from 'service/Api';
+import { fetchMovieDetails } from '../service/Api';
 import {
   Container,
   Description,
@@ -9,7 +9,7 @@ import {
   Image,
   ProdCompany,
 } from './MovieDetails.styled';
-import noimage from 'components/images/noimage.svg';
+import noimage from '../images/noimage.jpg';
 import Button from 'components/Button/Button';
 import { Loader } from 'components/Loader/Loader';
 

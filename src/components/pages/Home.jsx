@@ -3,7 +3,7 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 import MovieList from 'components/MovieList/MovieList';
-import { fetchTrendingMovies } from 'service/Api';
+import { fetchTrendingMovies } from '../service/Api';
 
 const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);

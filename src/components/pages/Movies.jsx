@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
-import { handleSearch } from 'service/Api';
+import { handleSearch } from '../service/Api';
 import { SearchForm } from 'components/SearchForm/SearchForm';
 import MovieList from 'components/MovieList/MovieList';
 
