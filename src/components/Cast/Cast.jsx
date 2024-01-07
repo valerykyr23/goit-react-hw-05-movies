@@ -37,8 +37,8 @@ const Cast = () => {
                   height="300px"
                   src={
                     actor.profile_path
-                      ? `https://image.tmdb.org/t/p/w300${actor.profile_path}`: "https://cdn.pixabay.com/photo/2015/03/15/23/25/james-stewart-675177_640.jpg"
-                      // : `${placeholder}`
+                      ? `https://image.tmdb.org/t/p/w300${actor.profile_path}`
+                      : `${placeholder}`
                   }
                   alt={actor.original_name}
                 />
