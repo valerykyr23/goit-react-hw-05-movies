@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { SiThemoviedatabase } from 'react-icons/si';
-
+import { FaFilm } from "react-icons/fa6";
 import background from '../images/background.jpg';
 
 export const Container = styled.div`
@@ -77,7 +76,7 @@ export const Text = styled.p`
   margin: 0;
 `;
 
-export const IconLogo = styled(SiThemoviedatabase)`
+export const IconLogo = styled(FaFilm)`
   width: 30px;
   height: 30px;
   position: relative;
@@ -85,4 +84,5 @@ export const IconLogo = styled(SiThemoviedatabase)`
   top: 5px;
   z-index: 1;
   opacity: 0.7;
+  margin-bottom: 15px;
 `;

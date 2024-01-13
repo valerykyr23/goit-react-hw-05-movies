@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { fetchMovieCast } from '../service/Api';
 import { List, Item } from './Casts.styled';
-// import placeholder from '../images/placeholder.png';
+import placeholder from '../images/placeholder.jpg';
 
 const Cast = () => {
   const { movieId } = useParams();

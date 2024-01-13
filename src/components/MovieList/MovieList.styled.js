@@ -59,6 +59,7 @@ export const LogoIcon = styled(FaFilm)`
   top: 5px;
   z-index: 1;
   opacity: 0.7;
+  margin-bottom: 10px;
 `;
 
 LinkDetails.propTypes = {
